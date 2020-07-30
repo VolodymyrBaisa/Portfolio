@@ -228,6 +228,26 @@ h2 {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24) !important;
 }
 
+/*====== Portfolio styles =====*/
+
+.portfolio-item {
+    cursor: pointer;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.portfolio-item-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.411);
+}
+.portfolio-item-caption:hover {
+    opacity: 1;
+}
+
 /*====== Footer styles =====*/
 .footer-space{
     height: 5vh;
