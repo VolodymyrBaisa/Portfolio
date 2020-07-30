@@ -1,0 +1,210 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+    color: #4c4e4e;
+}
+
+body {
+    background-color: #FCF9EC;
+}
+/*====== Navbar styles =====*/
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+.navbar-brand{
+    font-size: 1.75em;
+    font-weight: 800;
+}
+
+.nav-item{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.navbar-brand, .nav-item{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-light .navbar-brand{
+    color: #4c4e4e;
+}
+
+#navbarResponsive {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+
+#navbarResponsive.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.navbar-button-text {
+    display: inline-block;
+    margin: auto;
+    color: #4c4e4e;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+#navbarResponsive .navbar-toggler {
+    font-size: 80%;
+    padding: 0.4rem;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+/*====== Content =====*/
+.masthead {
+    padding-top: calc(6rem + 104px);
+}
+
+h1 {
+    font-size: 100px;
+}
+
+@media only screen and (max-width: 980px){
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.about-me-img {
+    background-image: url('../images/about.jpg');
+    height: 500px;
+    border-radius: 1%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 980px){
+    .about-image-wrap{
+        max-width: 100%;
+    }
+}
+
+.parallax {
+    background-image: url('../images/hire_me.jpg');
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-inner, h2{
+    position: absolute;
+    transform: rotate(-90deg);
+    color: #fff;
+    width: 550px;
+    bottom: 230px;
+    right: 50px;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 7em;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.521);
+}
+
+@media only screen and (max-width: 767px){
+    .text-inner, h2{
+        bottom: 260px;
+        right: -100px;
+    }
+
+    h2 {
+        font-size: 5em;
+    }
+}
+
+.menu {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-item {
+    font-family: 'Oswald', sans-serif;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    margin: 0px;
+    color: #fff;
+    font-size: 3em;
+}
+
+@keyframes menu-animation {
+    from {left: 0; }
+    to {left: -15px;}
+  }
+
+.menu-item:hover {
+    position: relative;
+    left: -15px;
+    animation-name: menu-animation;
+    animation-duration: 0.5s;
+}
+
+@media only screen and (max-width: 767px){
+    .menu-item {
+        padding: 10px 20px 10px 20px;
+        font-size: 2.5em;
+    }
+}
+
+@keyframes arrow-animation {
+    from {color: rgba(255, 255, 255, 0); right: 10px; }
+    to {color: rgba(255, 255, 255, 1); right: -10px;}
+  }
+
+.fa-chevron-right {
+    position: absolute;
+    bottom:18px;
+    right: -10px;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 10px;
+    animation-name: arrow-animation;
+    animation-duration: 0.5s;
+}
+/*====== Footer styles =====*/
+.footer-space{
+    height: 5vh;
+}
+.footer {
+    background-color: rgb(23,23,23);
+}
+
+.footer-info {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: rgb(102,102,102);
+}
+
+.footer-social-icons {
+    padding-top: 1rem;
+    text-align: right;
+    color: rgb(102,102,102);
+}
+
+.social-icon {
+    font-size: 40px;
+    margin: 0 10px 0 10px;
+}
